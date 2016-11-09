@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_live_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.jins_meme.visualizing_blinks_and_6axis.LiveViewActivity">
+
+    <FrameLayout
+        android:id="@+id/blink_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <VideoView
+            android:id="@+id/blink_view"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="220dp"
+            />
+
+        <ImageView
+            android:id="@+id/blink_image"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="220dp"
+            android:src="@drawable/blink_00000"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <ImageView
+            android:src="@drawable/body_vector_bg"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/body_image"
+            android:src="@drawable/body_vector"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/status_label"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="@string/not_connected"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/connect_button"
+        />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LIVE VIEW</string>
+
+    <string name="action_scan">Scan</string>
+    <string name="action_stop">Stop</string>
+
+    <string name="connected">Connected</string>
+    <string name="not_connected">Not connected</string>
+
+    <string name="bluetooth_off">Turn on Bluetooth to allow app to connect to JINS MEME</string>
+    <string name="location_required">Turn on Location Service to allow to scan JINS MEME</string>
+</resources>
